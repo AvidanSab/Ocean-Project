@@ -1,7 +1,10 @@
-print("This is our Ocean Project")
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
 
-#1.find/graph Data
-#2.transforming trig graphs
-#3.visualize data
+data = pd.read_csv('tides.csv')
 
-main()
+y_data = data['Predicted (ft)'].astype(float).values
+x_hours = np.arange(len(y_data))/10
+
+plt.plot(x_hours, )
