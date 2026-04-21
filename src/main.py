@@ -18,6 +18,6 @@ max_height = np.max(y_data)
 min_height = np.min(y_data)
 
 amplitude = (max_height-min_height)/2
-v_shift = (max+min)/2
-
+v_shift = (max_height+min_height)/2
+plt.plot(v_shift, 'r--')
 plt.show()
