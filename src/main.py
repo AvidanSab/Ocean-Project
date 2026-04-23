@@ -51,7 +51,7 @@ r_squared = 1 - (ss_res / ss_tot)
 
 # --- STEP 5: PRINT THE EQUATION PARAMETERS FOR THE PRESENTATION ---
 print("\n" + "="*40)
-print("🌊 OCEAN TIDES MODEL PARAMETERS 🌊")
+print("MODEL PARAMETERS")
 print("="*40)
 print(f"Overall Model Accuracy (R²): {r_squared:.4f} ({(r_squared*100):.1f}% accurate)")
 print(f"Vertical Shift (k): {v_shift:.3f} ft")
