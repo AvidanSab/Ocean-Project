@@ -2,14 +2,11 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-# --- STEP 1: LOAD THE DATA ---
+#Get Data/Plots NOAA data
 data = pd.read_csv('tides.csv')
 y_data = data['Predicted (ft)'].astype(float).values
-
-# Historic timeline (stops at the end of the data)
 x_hours = np.arange(len(y_data)) / 10
 
-# Forecast timeline (adds 48 hours / 480 points into the future)
 x_forecast = np.arange(len(y_data) + 480) / 10
 
 # --- STEP 2: CALCULATE GLOBAL TRANSFORMATIONS ---
